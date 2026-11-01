@@ -1,0 +1,45 @@
+@let nav = i18n.t().nav;
+<header class="top-bar">
+  <div class="title-row">
+    <a class="brand" [routerLink]="[]" fragment="top">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand__name">orlando<b>my</b>journey<span class="brand__tld">.dev</span></span>
+    </a>
+    <span class="title-file mono" aria-hidden="true">{{ activeFile() }}</span>
+
+    <div class="actions">
+      <a class="action" [routerLink]="otherPath()" [attr.aria-label]="nav.switchLang" [attr.title]="nav.switchLang" [attr.hreflang]="i18n.otherLang()">
+        <app-icon name="globe" />
+        <span class="mono">{{ i18n.otherLang().toUpperCase() }}</span>
+      </a>
+      <button
+        type="button"
+        class="action"
+        (click)="theme.toggle()"
+        [attr.aria-label]="theme.theme() === 'dark' ? nav.themeToLight : nav.themeToDark"
+        [attr.title]="theme.theme() === 'dark' ? nav.themeToLight : nav.themeToDark"
+      >
+        <app-icon [name]="theme.theme() === 'dark' ? 'sun' : 'moon'" />
+      </button>
+      <a class="action action--cv" [href]="profile.cv" download>
+        <app-icon name="download" />
+        <span class="cv-label">{{ nav.downloadCv }}</span>
+      </a>
+    </div>
+  </div>
+
+  <nav class="tabs" [attr.aria-label]="nav.menu">
+    @for (item of items; track item.id) {
+      <a
+        class="tab mono"
+        [class.tab--active]="active() === item.id"
+        [attr.aria-current]="active() === item.id ? 'location' : null"
+        [routerLink]="[]"
+        [fragment]="item.id"
+        [style.--dot]="item.color"
+      >
+        {{ nav[item.key] }}
+      </a>
+    }
+  </nav>
+</header>
