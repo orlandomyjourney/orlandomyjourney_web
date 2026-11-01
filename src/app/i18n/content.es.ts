@@ -328,6 +328,18 @@ export const ES: Content = {
     allPosts: 'Ver todas mis publicaciones',
     posts: [
       {
+        title: 'Mi primer sistema distribuido tenía hélices',
+        summary:
+          'Mi proyecto de titulación: un dron autónomo que volaba a un punto en un mapa, esquivaba obstáculos y reportaba su ubicación cada segundo, sin Wi-Fi ni cobertura celular.',
+        points: [
+          'Un triángulo: estación en tierra en Flask, Raspberry Pi 4 con YOLOv3-tiny y un controlador de vuelo Pixhawk.',
+          'LoRa SX1276 a 915 MHz para la misión y la telemetría; serial en TELEM2 con MAVLink hacia el Pixhawk.',
+          'Lección para la nube: diseñar para enlaces poco confiables y decidir en el borde.',
+        ],
+        tags: ['Drones', 'Visión artificial', 'LoRa'],
+        url: 'https://lnkd.in/p/gvgQmDJ9',
+      },
+      {
         title: 'Software Architecture Foundations: empieza por las personas',
         summary:
           'Lo que más me quedó del curso no fue un diagrama: refinar una historia de usuario entre analistas y desarrolladores crea un contrato compartido, muy parecido a la mentalidad API-led.',

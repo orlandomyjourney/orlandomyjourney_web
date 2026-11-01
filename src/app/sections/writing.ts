@@ -52,9 +52,14 @@ import { RevealDirective } from '../shared/reveal.directive';
       display: grid;
       gap: 20px;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 720px) {
       .grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1040px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
     .post {

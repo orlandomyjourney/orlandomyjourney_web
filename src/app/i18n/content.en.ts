@@ -328,6 +328,18 @@ export const EN: Content = {
     allPosts: 'See all my posts',
     posts: [
       {
+        title: 'My first distributed system had propellers',
+        summary:
+          'My telematics thesis: an autonomous drone that flew to a point on a map, dodged obstacles and reported its position every second, without Wi-Fi or cellular coverage.',
+        points: [
+          'A triangle: Flask ground station, Raspberry Pi 4 with YOLOv3-tiny, and a Pixhawk flight controller.',
+          'LoRa SX1276 at 915 MHz for the mission and telemetry; serial on TELEM2 with MAVLink to the Pixhawk.',
+          'Lesson for the cloud: design for unreliable links and decide at the edge.',
+        ],
+        tags: ['Drones', 'Computer vision', 'LoRa'],
+        url: 'https://lnkd.in/p/gvgQmDJ9',
+      },
+      {
         title: 'Software Architecture Foundations: it starts with people',
         summary:
           'What stuck with me from the course was not a diagram: refining a user story with analysts and developers creates a shared contract, much like the API-led mindset.',

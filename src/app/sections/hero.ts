@@ -236,8 +236,8 @@ import { Icon } from '../shared/icon';
     }
     .code {
       position: absolute;
-      left: -64px;
-      right: 16px;
+      left: -12px;
+      right: -28px;
       bottom: 0;
       transform: rotate(-2deg);
     }
