@@ -9,7 +9,7 @@ export const PROFILE = {
     linkedin: 'https://www.linkedin.com/in/orlandomyjourney/',
     linkedinActivity: 'https://www.linkedin.com/in/orlandomyjourney/recent-activity/all/',
     github: 'https://github.com/orlandomyjourney',
-    repo: 'https://github.com/orlandomyjourney/orlandomyjourney.github.io',
+    repo: 'https://github.com/orlandomyjourney/orlandomyjourney_web',
   },
   talkPhoto: '/images/talk-stage.webp',
 };

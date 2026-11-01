@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "postbuild": "node -e \"require('fs').copyFileSync('dist/orlando-my-journey/browser/index.html','dist/orlando-my-journey/browser/404.html')\""
   },
   "private": true,
   "packageManager": "npm@11.19.1",

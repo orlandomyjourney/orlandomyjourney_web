@@ -1,7 +1,16 @@
 # orlandomyjourney.dev
 
 Personal site of **Orlando Guzman** — Tech Lead and Cloud Solutions Engineer.
-Built with Angular 22, prerendered to static HTML (English at `/`, Spanish at `/es/`) and deployed to GitHub Pages.
+It tells my professional journey: experience, architecture work, projects, talks and writing.
+
+🌐 [orlandomyjourney.dev](https://orlandomyjourney.dev)
+
+## Stack
+
+- Angular 22 (standalone components, signals), prerendered to static HTML
+- Bilingual: English at `/`, Spanish at `/es/`
+- Dracula (dark) and Alucard (light) themes, inspired by VS Code
+- Hosted on Netlify with continuous deployment from `main`
 
 ## Run locally
 
@@ -11,46 +20,21 @@ Requires Node.js 24.15 or newer (see `.nvmrc`).
 nvm use
 npm install
 npm start          # http://localhost:4200
-npm run build      # static output in dist/orlando-my-journey/browser
+npm run build      # static site in dist/orlando-my-journey/browser
 ```
 
-## Where to edit content
+## Project structure
 
-| What | File |
+| What | Where |
 | --- | --- |
-| Texts in English | `src/app/i18n/content.en.ts` |
-| Texts in Spanish | `src/app/i18n/content.es.ts` |
-| Email, links, photos | `src/app/i18n/profile.ts` |
-| Colors (Dracula / Alucard) | `src/styles.scss` |
-| Photos | `public/images/` |
+| Texts (EN / ES) | `src/app/i18n/content.en.ts`, `content.es.ts` |
+| Shared links and photos | `src/app/i18n/profile.ts` |
+| Page sections | `src/app/sections/` |
+| Theme colors | `src/styles.scss` |
+| Images and CV | `public/` |
 
-Both language files share the `Content` type (`content.model.ts`), so TypeScript reports any section missing in one of them.
+Both language files share the `Content` type, so TypeScript reports any text missing in one of them.
 
-## Updating the CV
+## License
 
-Replace `public/cv/Orlando-Guzman-Resume.pdf` with the new version (same file name) and push to `main`.
-The workflow redeploys the site and the "Download CV" buttons serve the new file.
-
-## Deployment (GitHub Pages + name.com)
-
-1. Push this project to the repository `orlandomyjourney/orlandomyjourney.github.io`, branch `main`.
-2. In the repository: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-   The workflow in `.github/workflows/deploy.yml` builds and publishes on every push to `main`.
-3. In **Settings → Pages → Custom domain**, enter `orlandomyjourney.dev` (it is also in `public/CNAME`).
-4. In name.com, **DNS Records** for `orlandomyjourney.dev`:
-
-   | Type | Host | Answer |
-   | --- | --- | --- |
-   | A | *(empty)* | 185.199.108.153 |
-   | A | *(empty)* | 185.199.109.153 |
-   | A | *(empty)* | 185.199.110.153 |
-   | A | *(empty)* | 185.199.111.153 |
-   | AAAA | *(empty)* | 2606:50c0:8000::153 |
-   | AAAA | *(empty)* | 2606:50c0:8001::153 |
-   | AAAA | *(empty)* | 2606:50c0:8002::153 |
-   | AAAA | *(empty)* | 2606:50c0:8003::153 |
-   | CNAME | www | orlandomyjourney.github.io |
-
-   Remove any default name.com parking records (A / ALIAS / CNAME on the root or `www`) that conflict with these.
-5. When the DNS check passes, enable **Enforce HTTPS**. `.dev` domains only work over HTTPS, so the site loads once GitHub issues the certificate (it can take up to an hour).
-6. Recommended: verify the domain in **GitHub → Settings (your profile) → Pages → Add a domain**, to prevent takeovers.
+The code is available for reference. Texts, photos and the CV are personal content — please don't reuse them.

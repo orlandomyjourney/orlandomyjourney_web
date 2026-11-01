@@ -48,11 +48,6 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public",
-                "ignore": []
-              },
-              {
-                "glob": ".nojekyll",
                 "input": "public"
               }
             ],

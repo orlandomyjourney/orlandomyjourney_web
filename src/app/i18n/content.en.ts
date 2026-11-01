@@ -262,9 +262,9 @@ export const EN: Content = {
       {
         title: 'orlandomyjourney.dev',
         period: '2026',
-        summary: 'This site: an Angular app prerendered to static HTML, bilingual, and deployed to GitHub Pages with GitHub Actions.',
+        summary: 'This site: an Angular app prerendered to static HTML, bilingual, and deployed to Netlify with continuous deployment from GitHub.',
         bullets: ['Dracula and Alucard themes, English and Spanish routes, and a CV that updates with every push.'],
-        tags: ['Angular', 'TypeScript', 'GitHub Actions'],
+        tags: ['Angular', 'TypeScript', 'Netlify'],
         link: { label: 'View source', url: PROFILE.links.repo },
       },
     ],
@@ -373,5 +373,5 @@ export const EN: Content = {
     text: 'Open to conversations about legacy modernization, integration architecture and cloud solutions — and always happy to join a meetup or community event.',
     emailLabel: 'Send me an email',
   },
-  footer: { built: 'Built with Angular and deployed on GitHub Pages.', source: 'Source code' },
+  footer: { built: 'Built with Angular and deployed on Netlify.', source: 'Source code' },
 };
