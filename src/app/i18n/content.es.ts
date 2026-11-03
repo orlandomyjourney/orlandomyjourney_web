@@ -325,8 +325,22 @@ export const ES: Content = {
     title: 'Artículos',
     intro: 'Lo que aprendo sobre arquitectura y modernización, compartido en LinkedIn. Sin detalles de la empresa: solo las decisiones y por qué importan.',
     readMore: 'Leer en LinkedIn',
+    prev: 'Post anterior',
+    next: 'Siguiente post',
     allPosts: 'Ver todas mis publicaciones',
     posts: [
+      {
+        title: 'Tech Lead hoy, arquitecto de soluciones en camino',
+        summary:
+          'Después de "Software Architecture: From Developer to Architect": el cambio empieza cuando dejas de preguntar cómo funciona una herramienta y preguntas cómo se comunican los componentes y si cumplen lo que el negocio necesita.',
+        points: [
+          'Una base sólida de desarrollo da criterio para evaluar microservicios, serverless, API management o IA, en lugar de seguir la moda.',
+          'Una solución no está terminada hasta que Ops pueda desplegarla, escalarla y operarla en la infraestructura existente.',
+          'Ser mentor de los devs y hacer POCs con tecnología nueva es parte del trabajo.',
+        ],
+        tags: ['Certificación', 'Arquitectura de soluciones'],
+        url: 'https://lnkd.in/p/gHRCkpz2',
+      },
       {
         title: 'Mi primer sistema distribuido tenía hélices',
         summary:
@@ -370,7 +384,7 @@ export const ES: Content = {
     intro: 'Hacia dónde va este viaje: convertirme en Arquitecto de Soluciones de Software y en un líder técnico que ayude a los equipos a modernizarse con confianza.',
     status: { done: 'Logrado', progress: 'En curso', next: 'Siguiente' },
     goals: [
-      { status: 'done', title: 'AZ-900 y Software Architecture Foundations', text: 'Certificado. También Scrum Fundamentals (SFC) y Git y GitHub.' },
+      { status: 'done', title: 'AZ-900 y Software Architecture Foundations', text: 'Certificado. También Software Architecture: From Developer to Architect, Scrum Fundamentals (SFC) y Git y GitHub.' },
       { status: 'done', title: 'Gold Microsoft Learn Student Ambassador', text: 'Tres años enseñando y organizando comunidades de cloud.' },
       { status: 'done', title: 'Tech Lead', text: 'Liderando un equipo de modernización multiplataforma desde junio de 2026.' },
       { status: 'progress', title: 'Azure Solutions Architect Expert (AZ-305)', text: 'Preparando la certificación para formalizar la práctica de arquitectura.' },

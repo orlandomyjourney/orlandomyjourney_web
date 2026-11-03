@@ -155,7 +155,7 @@ export interface Content {
     items: Talk[];
     photoAlt: string;
   };
-  writing: SectionHead & { posts: Post[]; readMore: string; allPosts: string };
+  writing: SectionHead & { posts: Post[]; readMore: string; allPosts: string; prev: string; next: string };
   roadmap: SectionHead & { status: Record<GoalStatus, string>; goals: Goal[] };
   contact: SectionHead & { text: string; emailLabel: string };
   footer: { built: string; source: string };

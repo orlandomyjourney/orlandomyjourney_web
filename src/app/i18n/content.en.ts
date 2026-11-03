@@ -325,8 +325,22 @@ export const EN: Content = {
     title: 'Writing',
     intro: 'What I learn about architecture and modernization, shared on LinkedIn. No company details — just the decisions and why they matter.',
     readMore: 'Read on LinkedIn',
+    prev: 'Previous post',
+    next: 'Next post',
     allPosts: 'See all my posts',
     posts: [
+      {
+        title: 'Tech Lead today, Solutions Architect in the making',
+        summary:
+          'After "Software Architecture: From Developer to Architect": the shift starts when you stop asking how a tool works and ask how all the components talk and meet the business needs.',
+        points: [
+          'A strong development background gives you criteria to judge microservices, serverless, API management or AI, instead of following the hype.',
+          'A solution is not finished until Ops can deploy, scale and run it on the infrastructure you have.',
+          'Mentoring developers and running POCs on new tech is part of the job.',
+        ],
+        tags: ['Certification', 'Solutions architecture'],
+        url: 'https://lnkd.in/p/gHRCkpz2',
+      },
       {
         title: 'My first distributed system had propellers',
         summary:
@@ -370,7 +384,7 @@ export const EN: Content = {
     intro: 'Where this journey is heading: becoming a Software Solutions Architect and a technical leader who helps teams modernize with confidence.',
     status: { done: 'Done', progress: 'In progress', next: 'Next' },
     goals: [
-      { status: 'done', title: 'AZ-900 & Software Architecture Foundations', text: 'Certified. Also Scrum Fundamentals (SFC) and Git & GitHub.' },
+      { status: 'done', title: 'AZ-900 & Software Architecture Foundations', text: 'Certified. Also Software Architecture: From Developer to Architect, Scrum Fundamentals (SFC) and Git & GitHub.' },
       { status: 'done', title: 'Gold Microsoft Learn Student Ambassador', text: 'Three years teaching and organizing cloud communities.' },
       { status: 'done', title: 'Tech Lead', text: 'Leading a cross-platform modernization team since June 2026.' },
       { status: 'progress', title: 'Azure Solutions Architect Expert (AZ-305)', text: 'Preparing the certification to formalize the architecture practice.' },
